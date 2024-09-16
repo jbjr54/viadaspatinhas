@@ -41,13 +41,13 @@ mysqli_stmt_close($stmt);
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="projeto/bannerbom.jpg" alt="AAAAAA" class="d-block w-100">
+                    <img src="../../projeto/bannerbom.jpg" alt="AAAAAA" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="projeto/bannerdoguinho.jpg" alt="BBBBBB" class="d-block w-100">
+                    <img src="../../projeto/bannerdoguinho.jpg" alt="BBBBBB" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="projeto/gatobanner.jpg" alt="CCCCC" class="d-block w-100">
+                    <img src="../../projeto/gatobanner.jpg" alt="CCCCC" class="d-block w-100">
                 </div>
             </div>
         
@@ -70,13 +70,13 @@ mysqli_stmt_close($stmt);
         <div class="ong-card-container">
 
             <div class="ong-card">
-                <img src="projeto/sosaumigos.webp" alt="ONG 1" class="ong-card-img">
+                <img src="../../projeto/sosaumigos.webp" alt="ONG 1" class="ong-card-img">
                 <div class="ong-card-content">
                     <h3>SOS Aumigos</h3>
                 </div>
             </div>
             <div class="ong-card">
-                <img src="projeto/patinhasunidas.jpg" alt="ONG 2" class="ong-card-img">
+                <img src="../../projeto/patinhasunidas.jpg" alt="ONG 2" class="ong-card-img">
                 <div class="ong-card-content">
                     <h3>Patinhas Unidas</h3>
                 </div>
@@ -84,7 +84,7 @@ mysqli_stmt_close($stmt);
             <div class="ong-card">
                 <br>
                 <br>
-                <img src="projeto/mapa.jpg" alt="ONG 3" class="ong-card-img">
+                <img src="../../projeto/mapa.jpg" alt="ONG 3" class="ong-card-img">
                 <br>
                 <br>
                 <br>

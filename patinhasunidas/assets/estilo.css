@@ -550,7 +550,7 @@ textarea {
 .cardzao {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
     justify-content: flex-start; /* Alinha os cards à esquerda */
     align-items: flex-start; /* Alinha os cards ao topo */
 }
@@ -649,4 +649,16 @@ textarea {
 }
 .profile-details label {
     font-weight: bold;
+}
+
+.aviso-restrito {
+    background-color: #f8d7da; /* Cor de fundo vermelho claro */
+    color: #721c24; /* Cor do texto vermelho escuro */
+    border: 1px solid #f5c6cb; /* Borda vermelha clara */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 10px 0; /* Espaço superior e inferior */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
 }

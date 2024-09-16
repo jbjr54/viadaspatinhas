@@ -63,7 +63,7 @@ if ($conn->connect_error) {
 
                     <!-- Exibe a imagem com o caminho completo e usa a função htmlspecialchars para escapar o atributo alt -->
                 <div class="card">     
-                    <img class="card-img" src="<?php echo htmlspecialchars("../../patinhasunidas/assets/img/adocao/" . $row["FOTO_ADOCAO"], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($row["NOME"], ENT_QUOTES, 'UTF-8'); ?>">
+                    <img class="card-img" src="<?php echo htmlspecialchars("../../../patinhasunidas/assets/img/adocao/" . $row["FOTO_ADOCAO"], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($row["NOME"], ENT_QUOTES, 'UTF-8'); ?>">
                     <div class="card-body">
                         <!-- Exibe o nome do animal com a função htmlspecialchars para segurança -->
                         <h4 class="card-title"><b><?php echo htmlspecialchars($row["NOME"], ENT_QUOTES, 'UTF-8'); ?></b></h4>
