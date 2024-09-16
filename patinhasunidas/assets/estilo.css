@@ -1,0 +1,652 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    background-color: rgb(241, 241, 250);
+    color: black;
+    height: 100%
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+/* Estilo geral da navbar */
+#nav{
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e3e3e3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 0 15px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+.navbar-brand img {
+    width: 70px; /* Ajuste este valor conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #e3e3e3;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Substitua com uma imagem de ícone de cachorro ou um SVG relacionado a pets */
+}
+
+/* Estilo para a lista de navegação */
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .btn-primary {
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#btn-cadastro-nav {
+    background-color: #007bff;
+    color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Cor de destaque ao passar o mouse */
+    background-color: #f1f1f1; /* Fundo de destaque ao passar o mouse */
+    border-radius: 5px;
+}
+
+/* Ícones */
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+    color: #007bff; /* Cor dos ícones */
+    margin-right: 8px;
+}
+
+#demo {
+    position: relative;
+    width: 80vw; /* Ajuste a largura do carrossel */
+    height: 600px; /* Ajuste a altura do carrossel */
+    margin: auto; /* Centraliza o carrossel horizontalmente */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    height: 100%; /* Garante que o interior do carrossel preencha toda a altura */
+}
+
+.carousel-item img {
+    width: 100%; /* Faz com que a imagem se ajuste ao tamanho do carrossel */
+    height: 100%; /* Mantém a altura do carrossel */
+    object-fit: contain; /* Ajusta a imagem para aparecer completa */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px; /* Ajuste a distância do controle à esquerda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Ajuste a distância do controle à direita */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo dos ícones */
+    border-radius: 50%; /* Bordas arredondadas dos ícones */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    #demo {
+        width: 90vw; /* Ajusta a largura do carrossel para telas menores */
+        height: 400px; /* Ajusta a altura do carrossel para telas menores */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%; /* Ajusta a largura dos controles para telas menores */
+        height: 40px; /* Ajusta a altura dos controles para telas menores */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 25px; /* Ajusta o tamanho dos ícones dos controles */
+        height: 25px; /* Ajusta o tamanho dos ícones dos controles */
+    }
+}
+
+@media (max-width: 480px) {
+    #demo {
+        width: 95vw; /* Ajusta a largura do carrossel para telas muito pequenas */
+        height: 200px; /* Ajusta a altura do carrossel para telas muito pequenas */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%; /* Ajusta a largura dos controles para telas muito pequenas */
+        height: 35px; /* Ajusta a altura dos controles para telas muito pequenas */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px; /* Ajusta o tamanho dos ícones dos controles */
+        height: 20px; /* Ajusta o tamanho dos ícones dos controles */
+    }
+}
+
+#h1ongs{
+    text-align: center;
+}
+
+.ong-card-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.ong-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    width: 300px; /* Largura fixa do card */
+    height: 350px; /* Altura fixa do card */
+}
+
+.ong-card:hover {
+    transform: translateY(-10px);
+}
+
+.ong-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Cobre o espaço do card mantendo a proporção da imagem */
+}
+
+.ong-card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.ong-card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .ong-card-container {
+        flex-direction: column; /* Alinha os cards em coluna */
+        align-items: center; /* Centraliza os cards horizontalmente */
+        gap: 20px; /* Espaço entre os cards */
+    }
+
+    .ong-card {
+        width: 90%; /* Reduz a largura dos cards para caber na tela */
+        max-width: 400px; /* Define uma largura máxima para evitar que os cards fiquem muito largos */
+        height: auto; /* Permite que a altura se ajuste automaticamente com base no conteúdo */
+    }
+
+    .ong-card-img {
+        height: 150px; /* Ajusta a altura da imagem para telas menores */
+    }
+
+    .ong-card-content h3 {
+        font-size: 1em; /* Reduz o tamanho da fonte do título para telas menores */
+    }
+}
+
+.about-container {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 800px; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Adiciona preenchimento interno ao container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao container */
+    background-color: #f9f9f9; /* Cor de fundo do container */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao container */
+  }
+  
+  /* Define o estilo do parágrafo específico para a seção "Sobre Nós" */
+  .about-text {
+    font-size: 16px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao justificar */
+  }
+
+  /* Estilos para o footer */
+.site-footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno do footer */
+    font-size: 14px; /* Tamanho da fonte */
+    bottom: 0;
+  }
+  
+  .footer-container {
+    width: 80%; /* Largura do container */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    display: flex; /* Alinha os itens em linha */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    flex-wrap: wrap; /* Permite quebra de linha para telas menores */
+  }
+  
+  .footer-section {
+    flex: 1; /* Permite que as seções ocupem espaço flexível */
+    margin: 0 15px; /* Margem lateral das seções */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px; /* Espaço abaixo dos cabeçalhos */
+    font-size: 18px; /* Tamanho da fonte dos cabeçalhos */
+  }
+  
+  .footer-section p, .footer-section a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
+  
+  .footer-bottom {
+    text-align: center; /* Centraliza o texto */
+    padding-top: 10px; /* Espaço acima do texto */
+    border-top: 1px solid #444; /* Linha de separação superior */
+  }
+  
+  .footer-bottom p {
+    margin: 0; /* Remove a margem do parágrafo */
+    font-size: 12px; /* Tamanho da fonte do rodapé */
+  }
+  
+.container_jogos {
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário */
+.container_jogos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Estilos para o formulário */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.auth-form input {
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-form input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.auth-form button.auth-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-form button.auth-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.auth-form button.auth-btn:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9ac1c6; /* Azul clarinho */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.upload-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #FFA500; /* Laranja */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input_foto {
+    display: none; /* Oculta o botão padrão de upload */
+}
+
+.botao {
+    background-color: #FFA500; /* Laranja igual ao botão de upload */
+    color: #555;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.botao:hover {
+    background-color: #FF8C00;
+    transform: scale(1.02);
+}
+
+.botao:active {
+    background-color: #FF4500;
+    transform: scale(0.95);
+}
+
+/* Estilo dos campos do formulário */
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #293749;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão de envio */
+
+.botao2 {
+    width: 100%; /* Faz com que a div ocupe toda a largura da página */
+    display: flex; /* Utiliza o Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 100px; /* Espaço superior */
+}
+
+.botao2 a {
+    text-decoration: none;
+    padding: 16px 32px; /* Aumenta o padding para um botão maior */
+    background-color: #0d6efd; /* Azul */
+    color: white;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px; /* Bordas arredondadas */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block; /* Faz com que o link se comporte como um bloco para padding e outras propriedades */
+    width: 100%; /* Faz com que o link ocupe toda a largura da div */
+    max-width: 400px; /* Define uma largura máxima opcional */
+}
+
+.botao2 a:hover {
+    background-color: #005be2; /* Azul mais escuro */
+    transform: scale(1.02); /* Efeito de aumento no hover */
+}
+
+.botao2 a:active {
+    background-color: #005be2; /* Azul ainda mais escuro quando pressionado */
+    transform: scale(0.95); /* Efeito de contração ao pressionar */
+}
+/* Estilo dos rótulos */
+.form-container label {
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Estilo do título do formulário */
+.form-container h2 {
+    text-align: center;
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #152725;
+    margin-bottom: 10px;
+    resize: vertical;
+    height: 100px;
+}
+input[type="file"] {
+    margin-bottom: 10px;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.cardzao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    align-items: flex-start; /* Alinha os cards ao topo */
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para efeitos */
+    background-color: #fff; /* Fundo branco para o card */
+    border: 1px solid #ddd; /* Borda sutil */
+    align-items: center;
+    margin: 40px auto;  
+}
+
+.card-img {
+    width: 100%;
+    height: 200px; /* Ajustado para uma altura mais adequada */
+    object-fit: cover; /* Cobre toda a área da imagem sem distorcer */
+}
+
+.card-body {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Cor de texto mais suave */
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+}
+/* Responsividade */
+@media (max-width: 400px) {
+    .card_mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .card {
+      width: 90%;              /* Ajusta a largura do card para 90% da tela */
+      max-width: 400px;        /* Define uma largura máxima para o card */
+      margin: 40px auto;       /* Centraliza o card horizontalmente e adiciona margem vertical */
+    }
+  
+    .card-body {
+      padding: 10px;           /* Reduz o padding interno no corpo do card */
+    }
+  
+    .card-title {
+      font-size: 1em;          /* Reduz o tamanho do título para dispositivos móveis */
+    }
+  
+    .card-text {
+      font-size: 0.9em;        /* Reduz o tamanho do texto para dispositivos móveis */
+    }
+  
+    .btn-primary {
+      padding: 8px 16px;       /* Ajusta o padding interno do botão */
+      font-size: 14px;         /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-header {
+    text-align: center;
+}
+.profile-header img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+.profile-header h1 {
+    margin: 10px 0;
+}
+.profile-details {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.profile-details p {
+    margin: 5px 0;
+}
+.profile-details label {
+    font-weight: bold;
+}
